@@ -1,4 +1,4 @@
-# Q-Learning_Robot'
+# Q-Learning_Robot
 
 In this assignment, Robby the Robot learns to explore a ten by ten grid using Q-learning. This grid is surrounded by a wall, and Robby and cans are placed randomly at each episode (0.5 chance of a can in each space). Robby can sense 5 different directions (N, S, E, W, and Current), and there are three potential outcomes (Empty, Can, and Wall). Robby navigates the grid with moveNorth, moveSouth, moveEast, moveWest, and pickUpCan actions. Robby receives a reward for picking up cans, and negative “rewards” for picking up an empty space or running into a wall.
 For each step (M) in an episode (N), Robby’s state was observed, then an action was chosen using e-greedy selection. A reward was then given and robby’s new state was observed before recalculating the Q formula (shown below).
